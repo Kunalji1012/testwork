@@ -40,8 +40,8 @@
     {"title":"Athletic Training","text":"Sport-specific drills and mobility."}
   ],
   "transformations": [
-    {"name":"Anjali — 12kg in 3 months","before":"assets/before1.jpg","after":"assets/after1.jpg"},
-    {"name":"Rohit — Lean & Strong","before":"assets/before2.jpg","after":"assets/after2.jpg"}
+    {"name":"Anjali — 12kg in 3 months","before":"assets/6.jpg","after":"assets/7.jpg"},
+    {"name":"Rohit — Lean & Strong","before":"assets/9.jpg","after":"assets/8.jpg"}
   ],
   "trainers": [
     {"name":"Rahul Sharma","role":"Strength Coach","bio":"8+ years, ISSA Certified.","image":"assets/9.jpg"},
@@ -104,3 +104,4 @@
     "button": {"label":"Book Your Free Trial","href":"#"}
   }
 }
+
