@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="meta-title">Loading…</title>
+  <meta id="meta-description" name="description" content="Premium gym website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="brand">
+      <a href="#" id="site-logo">[Gym Name]</a>
+    </div>
+    <nav class="nav-links" id="nav">
+      <a href="#about">About</a>
+      <a href="#usps">Why Us</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#services">Programs</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#blog">Blog</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+      <button class="btn cta-small" id="nav-cta">Start Free Trial</button>
+      <button id="hamburger" class="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-media" id="hero-media"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 id="hero-headline">Transform Your Body, Elevate Your Mind</h1>
+      <p id="hero-subtext">Push beyond limits with modern equipment, certified trainers, and a community that inspires every day.</p>
+      <div class="hero-ctas">
+        <a class="btn cta-primary" id="hero-cta1" href="#pricing">Start Free Trial</a>
+        <a class="btn cta-outline" id="hero-cta2" href="#contact">Book a Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <div class="grid two">
+      <div>
+        <h2>About Us</h2>
+        <p id="about-text"></p>
+        <ul id="about-stats" class="bullets"></ul>
+      </div>
+      <div>
+        <img id="about-image" class="rounded shadow" alt="Gym interior" />
+      </div>
+    </div>
+  </section>
+
+  <!-- USPs -->
+  <section id="usps" class="section section-alt">
+    <div class="container">
+      <h2 class="center">Why Choose Us</h2>
+      <div id="usp-cards" class="grid four cards"></div>
+    </div>
+  </section>
+
+  <!-- FACILITIES SLIDER -->
+  <section id="facilities" class="section container">
+    <h2>Facilities</h2>
+    <div class="slider" data-slider>
+      <button class="slider-btn prev" data-prev>‹</button>
+      <div class="slides" id="facility-slides"></div>
+      <button class="slider-btn next" data-next>›</button>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <h2 class="center">Programs</h2>
+      <div id="service-cards" class="grid three cards"></div>
+    </div>
+  </section>
+
+  <!-- TRANSFORMATION (BEFORE/AFTER) -->
+  <section id="transformations" class="section container">
+    <h2>Real People. Real Results.</h2>
+    <div id="transform-list" class="grid two"></div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section id="trainers" class="section section-alt">
+    <div class="container">
+      <h2 class="center">Meet Our Trainers</h2>
+      <div id="trainer-cards" class="grid three cards"></div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="section container">
+    <h2>Class Schedule</h2>
+    <div id="schedule-tabs" class="tabs"></div>
+    <div id="schedule-content"></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section section-alt">
+    <div class="container">
+      <h2 class="center">Transformations That Inspire</h2>
+      <div class="slider" data-slider>
+        <button class="slider-btn prev" data-prev>‹</button>
+        <div class="slides" id="testimonial-slides"></div>
+        <button class="slider-btn next" data-next>›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section container">
+    <h2>Pricing Plans</h2>
+    <div id="pricing-cards" class="grid three cards"></div>
+  </section>
+
+  <!-- OFFERS -->
+  <section id="offers" class="section section-offer">
+    <div class="container center">
+      <p id="offer-text" class="offer-text"></p>
+      <div id="countdown" class="countdown" hidden></div>
+      <a class="btn cta-primary" id="offer-cta" href="#contact">Claim Offer</a>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="benefits" class="section section-alt">
+    <div class="container">
+      <h2 class="center">Membership Benefits</h2>
+      <ul id="benefit-list" class="grid three checklist"></ul>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="section container">
+    <h2>Fitness Blog</h2>
+    <div id="blog-cards" class="grid three cards"></div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <h2 class="center">FAQs</h2>
+      <div id="faq-list" class="accordion"></div>
+    </div>
+  </section>
+
+  <!-- CTA FOOTER BANNER -->
+  <section id="contact" class="section cta-banner">
+    <div class="container center">
+      <h2 id="cta-headline">No More Excuses. Your Transformation Starts Today!</h2>
+      <p id="cta-address">📍 Address: —</p>
+      <p id="cta-phone">📞 Phone: —</p>
+      <p id="cta-email">📧 Email: —</p>
+      <a class="btn cta-primary" id="cta-button" href="#">Book Your Free Trial</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p id="footer-copy">© <span id="year"></span> [Gym Name]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

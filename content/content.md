@@ -1,0 +1,111 @@
+# Gym Website Content
+
+Welcome to the IronPulse Fitness content file.
+
+```json
+{
+  "meta": {
+    "brand": "IronPulse Fitness",
+    "title": "IronPulse Fitness — Transform Your Body, Elevate Your Mind",
+    "description": "Modern equipment, certified trainers, and results-driven programs in your city. Join IronPulse Fitness today."
+  },
+  "hero": {
+    "headline": "Transform Your Body, Elevate Your Mind",
+    "subtext": "Push beyond limits with modern equipment, certified trainers, and a community that inspires every day.",
+    "cta1": { "label": "Start Free Trial", "href": "#pricing" },
+    "cta2": { "label": "Book a Session", "href": "#contact" },
+    "video": "assets/hero.mp4",
+    "image": "assets/1.jpg"
+  },
+  "about": {
+    "text": "At IronPulse Fitness, we believe fitness is about building strength, confidence, and a healthier lifestyle. With world-class equipment, professional trainers, and a positive environment, we've been helping people achieve their goals since 2018.",
+    "stats": ["Founded in 2018", "500+ Members", "100% Personalized Training"],
+    "image": "assets/2.jpg"
+  },
+  "usps": [
+    {"title":"Certified Trainers","text":"Experienced professionals guiding you safely and effectively."},
+    {"title":"Modern Equipment","text":"Latest cardio and strength machines for all goals."},
+    {"title":"Flexible Timings","text":"Open 5 AM – 11 PM to fit your schedule."},
+    {"title":"Nutrition Plans","text":"Customized diet plans to maximize results."}
+  ],
+  "facilities": [
+    {"title":"Strength Zone","text":"Free weights, racks, and machines.","image":"assets/3.jpg"},
+    {"title":"Cardio Section","text":"Treadmills, bikes, rowers, and more.","image":"assets/4.jpg"},
+    {"title":"Yoga Studio","text":"Peaceful, air-conditioned space for classes.","image":"assets/5.jpg"},
+    {"title":"Steam & Sauna","text":"Relax and recover after intense sessions.","image":"assets/6.jpg"},
+    {"title":"Locker Rooms","text":"Secure lockers & clean showers.","image":"assets/7.jpg"},
+    {"title":"Juice Bar","text":"Fresh shakes and supplements.","image":"assets/8.jpg"}
+  ],
+  "services": [
+    {"title":"Personal Training","text":"One-on-one coaching tailored to your goals."},
+    {"title":"Group Classes","text":"Zumba, HIIT, Yoga, and more high-energy sessions."},
+    {"title":"Strength & Conditioning","text":"Progressive programs for muscle & performance."},
+    {"title":"Cardio Programs","text":"Endurance and fat-loss routines."},
+    {"title":"Nutrition Guidance","text":"Personalized diet coaching with check-ins."},
+    {"title":"Athletic Training","text":"Sport-specific drills and mobility."}
+  ],
+  "transformations": [
+    {"name":"Anjali — 12kg in 3 months","before":"assets/before1.jpg","after":"assets/after1.jpg"},
+    {"name":"Rohit — Lean & Strong","before":"assets/before2.jpg","after":"assets/after2.jpg"}
+  ],
+  "trainers": [
+    {"name":"Rahul Sharma","role":"Strength Coach","bio":"8+ years, ISSA Certified.","image":"assets/9.jpg"},
+    {"name":"Priya Mehta","role":"Yoga & Zumba","bio":"ACE Certified, 6+ years.","image":"assets/10.jpg"},
+    {"name":"Arjun Singh","role":"Transformation Specialist","bio":"10+ years coaching.","image":"assets/11.jpg"}
+  ],
+  "schedule": {
+    "Weekdays": [
+      {"time":"6:00 AM","class":"Yoga Flow"},
+      {"time":"7:30 AM","class":"HIIT Training"},
+      {"time":"6:00 PM","class":"Zumba"},
+      {"time":"7:30 PM","class":"Strength Bootcamp"}
+    ],
+    "Saturday": [
+      {"time":"8:00 AM","class":"CrossFit"},
+      {"time":"5:00 PM","class":"Mobility & Stretch"}
+    ],
+    "Sunday": [
+      {"time":"8:30 AM","class":"Meditation & Flexibility"}
+    ]
+  },
+  "testimonials": [
+    {"name":"Anjali, 27","stars":5,"quote":"I lost 12 kgs and gained massive confidence.","image":"assets/12.jpg"},
+    {"name":"Rohit, 32","stars":5,"quote":"Challenging but fun — trainers are amazing!","image":"assets/13.jpg"},
+    {"name":"Karan, 41","stars":5,"quote":"Best investment in myself — fitter and stronger.","image":"assets/14.jpg"}
+  ],
+  "pricing": [
+    {"title":"Basic","price":1499,"features":["Gym Access","Cardio Zone","Group Classes"],"cta":{"label":"Choose Basic","href":"#contact"}},
+    {"title":"Standard","price":2499,"features":["Everything in Basic","2 PT Sessions / month","Progress Tracking"],"popular":true,"cta":{"label":"Choose Standard","href":"#contact"}},
+    {"title":"Premium","price":3999,"features":["Everything in Standard","Diet Consultation","Unlimited Guest Passes"],"cta":{"label":"Choose Premium","href":"#contact"}}
+  ],
+  "offers": {
+    "text": "🔥 Join Now & Get 20% OFF for 3 Months!",
+    "deadline": "2025-12-31T23:59:59",
+    "cta": {"label":"Claim Offer","href":"#contact"}
+  },
+  "benefits": [
+    "Free Body Composition Analysis",
+    "Free Wi-Fi & Music Lounge",
+    "Introductory Diet Plan",
+    "Fitness App Access",
+    "Locker & Shower Access",
+    "Member Community Events"
+  ],
+  "blog": [
+    {"title":"5 Best Exercises for Fat Loss","excerpt":"Simple moves that burn calories fast.","image":"assets/15.jpg","href":"#"},
+    {"title":"Carbs & Weight Loss — The Truth","excerpt":"How to use carbs smartly for energy.","image":"assets/16.jpg","href":"#"},
+    {"title":"Why Women Need Strength Training","excerpt":"Muscle is your metabolism booster.","image":"assets/17.jpg","href":"#"}
+  ],
+  "faq": [
+    {"q":"Do I need to be fit before joining?","a":"Not at all. We welcome beginners and advanced athletes."},
+    {"q":"Do you provide diet plans?","a":"Yes, our trainers prepare personalized diet plans."},
+    {"q":"Can I freeze my membership?","a":"Yes, for travel or medical reasons. Talk to our front desk."}
+  ],
+  "cta": {
+    "headline": "No More Excuses. Your Transformation Starts Today!",
+    "address": "123 Fitness Street, Your City",
+    "phone": "+91-9876543210",
+    "email": "contact@ironpulse.com",
+    "button": {"label":"Book Your Free Trial","href":"#"}
+  }
+}
