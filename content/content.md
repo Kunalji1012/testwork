@@ -45,8 +45,8 @@ Welcome to the IronPulse Fitness content file.
     {"title":"Athletic Training","text":"Sport-specific drills and mobility."}
   ],
   "transformations": [
-    {"name":"Anjali — 12kg in 3 months","before":"assets/before1.jpg","after":"assets/after1.jpg"},
-    {"name":"Rohit — Lean & Strong","before":"assets/before2.jpg","after":"assets/after2.jpg"}
+    {"name":"Anjali — 12kg in 3 months","before":"assets/5.jpg","after":"assets/6.jpg"},
+    {"name":"Rohit — Lean & Strong","before":"assets/8.jpg","after":"assets/7.jpg"}
   ],
   "trainers": [
     {"name":"Rahul Sharma","role":"Strength Coach","bio":"8+ years, ISSA Certified.","image":"assets/9.jpg"},
@@ -108,4 +108,5 @@ Welcome to the IronPulse Fitness content file.
     "email": "contact@ironpulse.com",
     "button": {"label":"Book Your Free Trial","href":"#"}
   }
+
 }
