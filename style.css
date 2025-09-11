@@ -131,3 +131,11 @@ body {
   .grid.three { grid-template-columns: 1fr; }
   .slides > * { flex-basis: 92%; }
 }
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px; /* Optional: match your rounded style */
+  margin: 0 auto;
+}
