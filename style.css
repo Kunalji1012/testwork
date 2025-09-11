@@ -132,10 +132,18 @@ body {
   .slides > * { flex-basis: 92%; }
 }
 
-.about-image {
+.about-image-wrapper {
   max-width: 100%;
-  height: auto;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
   display: block;
-  border-radius: 16px; /* Optional: match your rounded style */
-  margin: 0 auto;
 }
+
+.about-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
