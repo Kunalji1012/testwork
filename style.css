@@ -132,18 +132,26 @@ body {
   .slides > * { flex-basis: 92%; }
 }
 
-.about-image-wrapper {
-  max-width: 100%;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 16px;
-  display: block;
-}
-
+/* About Section Fix */
 .about-image {
-  width: 100%;
+  width: 100%;              /* ensure stays within container */
+  max-width: 500px;         /* optional: limit size on desktops */
   height: auto;
-  object-fit: cover;
   display: block;
+  border-radius: 16px;
+  margin: 0 auto;
+  object-fit: cover;        /* prevent distortion */
 }
 
+#about .grid.two {
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  #about img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
