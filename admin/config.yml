@@ -2,10 +2,9 @@ backend:
   name: git-gateway
   branch: main   # change to "master" if your repo uses that
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "assets"
 
-site_url: ""   # optional: set your deployed site URL
+site_url: "https://testwork2909.netlify.app"   # optional: set your deployed site URL
 
 collections:
   # -----------------
@@ -203,3 +202,4 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Href", name: "href", widget: "string" }
+
