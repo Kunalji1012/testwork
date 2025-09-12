@@ -3,9 +3,6 @@ backend:
   branch: main   # change to "master" if your repo uses that
 
 media_folder: "assets"
-
-site_url: "https://testwork2909.netlify.app"   # optional: set your deployed site URL
-
 collections:
   # -----------------
   # Quick edit: edit the whole JSON block inside content.md (code widget)
@@ -202,4 +199,5 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Href", name: "href", widget: "string" }
+
 
