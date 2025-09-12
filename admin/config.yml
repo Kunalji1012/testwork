@@ -1,11 +1,12 @@
 backend:
   name: git-gateway
-  branch: main   # change to "master" if your repo uses that
+  branch: main
 
 media_folder: "assets"
+
 collections:
   # -----------------
-  # Quick edit: edit the whole JSON block inside content.md (code widget)
+  # Quick edit: edit the whole JSON block inside content.md
   # -----------------
   - name: "site_content_raw"
     label: "Site Content (Raw JSON)"
@@ -18,18 +19,16 @@ collections:
             name: "body"
             widget: "code"
             default: "{}"
-            pattern: "\\{"
-            mode: "json"
             hint: "Edit the JSON block for the whole site. Save carefully."
 
   # -----------------
-  # Recommended: structured content file for better CMS widgets
+  # Structured content file for better CMS widgets
   # -----------------
   - name: "site_content_structured"
-    label: "Structured Site Content (recommended)"
+    label: "Structured Site Content"
     files:
       - file: "data/content.json"
-        label: "Structured site data (content.json)"
+        label: "Structured site data"
         name: "content_json"
         fields:
           - label: "Meta"
@@ -129,7 +128,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Name", name: "name", widget: "string" }
-              - { label: "Stars", name: "stars", widget: "number", value_type: "int" }
+              - { label: "Stars", name: "stars", widget: "number" }
               - { label: "Quote", name: "quote", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
 
@@ -138,7 +137,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Price", name: "price", widget: "number", value_type: "float" }
+              - { label: "Price", name: "price", widget: "number" }
               - label: "Features"
                 name: "features"
                 widget: "list"
@@ -199,5 +198,3 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Href", name: "href", widget: "string" }
-
-
