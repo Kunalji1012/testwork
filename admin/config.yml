@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: Kunalji1012/testwork
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "markdown"
+    label: "Markdown Content"
+    files:
+      - label: "Content Page"
+        name: "content"
+        file: "content/content.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "json"
+    label: "JSON Content"
+    files:
+      - label: "Site Data"
+        name: "site"
+        file: "data/content.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
