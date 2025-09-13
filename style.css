@@ -80,8 +80,8 @@ body {
 .slides { display:flex; gap:16px; scroll-behavior:smooth; overflow:auto; scroll-snap-type: x mandatory; padding-bottom: 10px; }
 .slides > * { flex: 0 0 80%; scroll-snap-align: start; }
 .slider-btn { position:absolute; top:50%; transform: translateY(-50%); background: var(--card); border:1px solid var(--border); border-radius:50%; width:40px; height:40px; cursor:pointer; }
-.slider-btn.prev { left: -10px; }
-.slider-btn.next { right: -10px; }
+.slider-btn.prev { left: -20px; }
+.slider-btn.next { right: -20px; }
 
 /* Before/After compare */
 .compare { position:relative; overflow:hidden; border-radius:16px; }
@@ -155,4 +155,5 @@ body {
     height: auto;
   }
 }
+
 
