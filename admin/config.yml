@@ -1,21 +1,17 @@
 backend:
-  name: github
-  repo: kunalji1012/testwork
-  branch: main   # change to "master" if your repo uses that
+  name: git-gateway
+  branch: main  # Change to "master" if your repo uses that
 
-media_folder: "assets"
-
-site_url: ""   # optional: set your deployed site URL
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
-  # -----------------
-  # Quick edit: edit the whole JSON block inside content.md (code widget)
-  # -----------------
+
   - name: "site_content_raw"
-    label: "Site Content (Raw JSON)"
+    label: "Raw Site Content (JSON)"
     files:
       - file: "content.md"
-        label: "Content JSON (content.md)"
+        label: "Raw JSON Content (content.md)"
         name: "content_md"
         fields:
           - label: "Raw JSON"
@@ -24,16 +20,13 @@ collections:
             default: "{}"
             pattern: "\\{"
             mode: "json"
-            hint: "Edit the JSON block for the whole site. Save carefully."
+            hint: "Edit carefully. Valid JSON only."
 
-  # -----------------
-  # Recommended: structured content file for better CMS widgets
-  # -----------------
   - name: "site_content_structured"
-    label: "Structured Site Content (recommended)"
+    label: "Structured Site Content"
     files:
       - file: "data/content.json"
-        label: "Structured site data (content.json)"
+        label: "Structured Site Data (content.json)"
         name: "content_json"
         fields:
           - label: "Meta"
@@ -118,7 +111,6 @@ collections:
           - label: "Schedule"
             name: "schedule"
             widget: "list"
-            summary: "{{fields.day}}"
             fields:
               - { label: "Day name", name: "day", widget: "string" }
               - label: "Classes"
@@ -203,4 +195,3 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Href", name: "href", widget: "string" }
-
