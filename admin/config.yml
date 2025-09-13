@@ -12,7 +12,7 @@ collections:
     label: "Site Content (Raw JSON)"
     files:
       - file: "content.md"
-        label: "Content JSON (content.md)"
+        label: "content JSON (content.md)"
         name: "content_md"
         fields:
           - label: "Raw JSON"
@@ -197,3 +197,4 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Href", name: "href", widget: "string" }
+
