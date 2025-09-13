@@ -83,6 +83,16 @@ body {
 .slider-btn.prev { left: -20px; }
 .slider-btn.next { right: -20px; }
 
+.slides {
+  display: flex;
+  gap: 16px;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 50px 10px 50px; /* top right bottom left */
+}
+
+
 /* Before/After compare */
 .compare { position:relative; overflow:hidden; border-radius:16px; }
 .compare img { display:block; width:100%; height:auto; }
@@ -155,5 +165,6 @@ body {
     height: auto;
   }
 }
+
 
 
