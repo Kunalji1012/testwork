@@ -1,3 +1,4 @@
+# Netlify CMS config
 backend:
   name: git-gateway
   branch: main
@@ -11,7 +12,7 @@ collections:
   - name: "site_content_raw"
     label: "Site Content (Raw JSON)"
     files:
-      - file: "content.md"
+      - file: "content/content.md"
         label: "content JSON (content.md)"
         name: "content_md"
         fields:
@@ -19,7 +20,6 @@ collections:
             name: "body"
             widget: "code"
             default: "{}"
-            pattern: "\\{"
             mode: "json"
             hint: "Edit the JSON block for the whole site. Save carefully."
 
@@ -30,6 +30,7 @@ collections:
         label: "Structured site data (content.json)"
         name: "content_json"
         fields:
+
           - label: "Meta"
             name: "meta"
             widget: "object"
@@ -83,7 +84,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image", name: "image", widget: "image", required: false }
 
           - label: "Services"
             name: "services"
@@ -165,7 +166,8 @@ collections:
           - label: "Benefits"
             name: "benefits"
             widget: "list"
-            field: { label: "Benefit", name: "benefit", widget: "string" }
+            field:
+              { label: "Benefit", name: "benefit", widget: "string" }
 
           - label: "Blog"
             name: "blog"
