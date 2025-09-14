@@ -1,11 +1,11 @@
 backend:
   name: git-gateway
-  branch: main   # change to "master" if your repo uses that
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
-site_url: ""   # optional: set your deployed site URL
+site_url: ""
 
 collections:
   - name: "site_content_raw"
@@ -197,4 +197,3 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Href", name: "href", widget: "string" }
-
