@@ -4,9 +4,31 @@
     <meta charset="utf-8" />
     <title>Content Manager — IronPulse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Basic full-page centering so admin looks fine on load */
+      html,body { height:100%; margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+      .center { display:flex; align-items:center; justify-content:center; height:100%; gap:1rem; }
+      .logo { font-weight:700; font-size:1.1rem; }
+    </style>
   </head>
   <body>
-    <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
+    <div class="center">
+      <div>
+        <div class="logo">Loading Netlify CMS…</div>
+        <div style="opacity:.7; font-size:.9rem;">If this page doesn't load, make sure <code>/admin/config.yml</code> exists in the repo.</div>
+      </div>
+    </div>
+
+    <!-- Netlify Identity (optional) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Netlify CMS app -->
+    <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
+
+    <!--
+      The CMS will automatically load /admin/config.yml if present.
+      If you prefer manual init, replace the line above with:
+      <script>CMS.init({ config: YOUR_CONFIG_OBJECT })</script>
+    -->
   </body>
 </html>
